@@ -412,9 +412,9 @@ a { color: inherit; text-decoration: none; }
     position: relative;
     border: 2.5px solid var(--black);
     border-radius: 12px;
-    padding: 0 0 4px;
+    padding: 0px 0 4px;
     margin-bottom: 12px;
-    margin-top: 12px; 
+    margin-top: 48px; 
 }
  
 .latest-news-title {
@@ -454,10 +454,8 @@ a { color: inherit; text-decoration: none; }
  
 .latest-news-item:hover { color: var(--red); }
  
- 
 /* RIGHT SIDEBAR — DEAL OF THE DAY */
  
-/* Same rounded-badge style as Latest News title */
 .deal-title {
     display: inline-block;
     border: 2.5px solid var(--black);
@@ -587,8 +585,7 @@ a { color: inherit; text-decoration: none; }
     font-size: 13px;
     opacity: 0.85;
 }
- 
- 
+
 /* MORE STORIES */
  
 .more-stories { margin-top: 32px; }
@@ -705,9 +702,6 @@ footer {
     padding-top: 16px;
 }
 
-
-
-
 /* ===== CATEGORY STRIP ===== */
 
 .category-strip, 
@@ -721,7 +715,7 @@ footer {
     width: 100%;
 }
 
-/* Tablet e Mobile: 2 colonne e 2 righe */
+/*  Mobile: 2 colonne e 2 righe */
 @media (max-width: 900px) {
     .category-strip,
     .category-stripbis {
@@ -732,7 +726,7 @@ footer {
 .cat-col {
     display: flex;
     flex-direction: column;
-    min-width: 0; /* Ensures content can wrap and not overflow container */
+    min-width: 0; 
 }
 
 .cat-title {
@@ -741,53 +735,50 @@ footer {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 12px;
+    box-shadow: #ff3366;
     display: inline-block;
-    word-wrap: break-word; /* Fix for long text like Bay Area Travel and Food */
+    word-wrap: break-word; 
     overflow-wrap: break-word;
+    box-shadow: #ff3366;
 }
 
 @media (max-width: 767px) {
     .cat-title {
-        font-size: 18px; /* Slightly smaller on mobile to help fit */
+        font-size: 18px; 
     }
 }
 
-/* ===== COMPORTAMENTO MOBILE PER RIGHT SIDEBAR E LATEST NEWS ===== */
+/* == MOBILE: RIGHT SIDEBAR AND LATEST NEWS ===== */
 
 @media (max-width: 767px) {
-    /* 1. Trasformiamo l'intero contenuto del sito in una colonna flessibile */
+   
     .site-content {
         display: flex;
         flex-direction: column;
     }
 
-    /* 2. "Smontiamo" la struttura a griglia per poter riordinare liberamente i suoi figli */
     .main-grid {
         display: contents; 
     }
 
-    /* 3. Assegniamo l'ordine esatto in cui vogliamo far apparire le sezioni dall'alto verso il basso */
     .center-content { order: 1; }
     .editors-picks { order: 2; }
     
-    /* 4. Rendiamo la colonna destra visibile (prima era nascosta su mobile) e la mettiamo al 3° posto */
     .right-sidebar { 
-        display: block !important; /* Sovrascrive il display: none precedente */
+        display: block !important; 
         order: 3; 
-        width: 100%; /* Le facciamo occupare tutta la larghezza dello schermo */
-        margin-top: 40px; /* Diamo un po' di respiro rispetto a Editor's Picks */
+        width: 100%; 
+        margin-top: 40px; 
     }
     
     .promo-banner { order: 4; }
     .category-strip { order: 5; }
     
-
-
     .more-stories { order: 6; }
-    /* Ottimizzazioni grafiche per la Latest News a larghezza intera */
+   
     .latest-news-box {
         margin-top: 20px;
-        border-radius: 8px; /* Mantiene gli angoli arrotondati puliti */
+        border-radius: 8px; 
     }
     
     .latest-news-title {
@@ -795,8 +786,8 @@ footer {
         transform: translateX(-50%);
     }
 
-    /* Opzionale: nascondi Deal of the Day su mobile se vuoi mostrare SOLO Latest News */
     .deal-box {
         display: none; 
     }
 }
+
