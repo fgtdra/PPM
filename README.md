@@ -1,6 +1,6 @@
 # Clone of SFGATE
 
-Very rough Clone of SFGATE.com 
+Very rough Clone of SFGATE.com, called ABCGATE
 
 ## File Structure AKA What the website is using
 
