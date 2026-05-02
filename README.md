@@ -1,7 +1,9 @@
-# Clonazione di un sito internet
+# Clone of SFGATE
 
-La mia prima clonazione di un sito internet. Chiaramente è stata sacrificata la parte grafica a favore della funzionalità
+Rough Clone od SFGATE.com 
 
 ## Struttura File
 
-index_2.html utilizza, per ora, *style_1_fixed.css*, ma è funzionante anche con *style_1.css*
+-  Html: index_2.html
+-  Css: style_1.fixed
+- Svg for favicon
