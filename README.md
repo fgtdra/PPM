@@ -6,5 +6,5 @@ Very rough Clone of SFGATE.com, called ABCGATE
 
 - Html: index_2.html
 - Css: style_1.fixed, support better resize for mobile
-  - style_1.css also work, button of Channel Strips are better, but create a lot of conflict during resize
+  - style_1.css also work, button of Channel Strips are better, but create conflicts with resize
 - Svg for favicon, svg draw by me to try local host of image
