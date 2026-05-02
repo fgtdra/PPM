@@ -1,6 +1,6 @@
 # Clone of SFGATE
 
-Rough Clone od SFGATE.com 
+Rough Clone of SFGATE.com 
 
 ## Struttura File
 
